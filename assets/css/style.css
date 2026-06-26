@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+:root {
+  --cyan: #4CDFFD;
+  --dark: #000000;
+  --dark-gray: #111111;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--dark);
+  color: #fff;
+}
+
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  background-color: var(--cyan);
+}
+
+.navbar-brand img {
+  height: 32px;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  font-weight: 400;
+}
+
+.carousel-item img {
+  max-height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.icon-box {
+  background-color: var(--cyan);
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 1.8rem;
+}
+
+#destacados .card {
+  background-color: var(--cyan);
+  border: none;
+}
+
+#destacados .card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+#contacto .form-control {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 0;
+}
+
+#contacto .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#contacto .form-control:focus {
+  background-color: transparent;
+  border-color: var(--cyan);
+  box-shadow: none;
+  color: #fff;
+}
+
+#contacto button {
+  background-color: var(--cyan);
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  padding: 0.5rem 2rem;
+}
+
+#contacto button:hover {
+  background-color: #3bc8e6;
+  color: #fff;
+}
+
+footer {
+  background-color: var(--cyan);
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #f0f0f0;
+}
+
+hr {
+  border-color: var(--cyan);
+  opacity: 1;
+  width: 200px;
+  margin: 0 auto;
+}
